@@ -1,24 +1,17 @@
 import "./App.css";
 import ToDoList from "./ToDoList.jsx";
-import ToDoPanel from "./ToDoPanel.jsx";
 
 function App() {
-  const annasToDoList = ["Call the landlord", "Book the dentist"];
-  const konstantinaToDoList = ["Buy milk", "Book the dentist"];
+    const mainToDoList = [
+        { id: "todo-1", text: "Buy Oat milk", done: false },
+        { id: "todo-2", text: "Go to the Gym", done: false },
+    ];
 
-  return (
-    <>
-      <ToDoList firstName={"Anna"} todos={annasToDoList} />
-      <ToDoList firstName={"Konstantina"} todos={konstantinaToDoList} />
-
-      <ToDoPanel firstName={"Lea"}>
-        <ol>
-          <li>Prepare Figma Tutorial</li>
-          <li>Prepare Assignment</li>
-        </ol>
-      </ToDoPanel>
-    </>
-  );
+    return (
+        <>
+            <ToDoList firstName={"Leonie"} todos={mainToDoList}/>
+        </>
+    );
 }
 
 export default App;
