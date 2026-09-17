@@ -1,0 +1,36 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f2f1e7;
+    color: #99004c;
+    margin: 0;
+}
+
+#root {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #ffd7d7;
+    border-radius: 12px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 2px 0;
+}
+
+li span {
+    flex: 1;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.55;
+}

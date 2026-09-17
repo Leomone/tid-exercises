@@ -1,4 +1,4 @@
-function TodoItem({ todo, onDelete, onToggle }) {
+function TodoItem({todo, onDelete, onToggle}) {
     return (
         <li>
             <input
@@ -6,7 +6,7 @@ function TodoItem({ todo, onDelete, onToggle }) {
                 checked={todo.done}
                 onChange={() => onToggle(todo.id)}
             />
-            <span>{todo.text}</span>
+            <span className={todo.done ? "done" : ""}>{todo.text}</span>
             <button type="button" onClick={() => onDelete(todo.id)}>
                 Delete
             </button>
